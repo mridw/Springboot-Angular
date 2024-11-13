@@ -1,0 +1,15 @@
+
+<h1 class="text-center , text-4xl , font-extrabold ">Login</h1>
+<div class="text-center text-4xl font-bold border border-stone-600 mx-32 my-44 py-8">
+
+<form  [formGroup]="data" (submit)="handleSubmit()" (reset)="handleRegister()">
+    <label for="username">UserName</label><br>
+        <input class="my-3 border border-neutral-400" type="text" placeholder="username" id="username" formControlName="email">
+        <br>
+    <label for="password">Password</label><br>
+        <input class="my-3 border border-neutral-400" type="password" placeholder="password" id="password" formControlName="password">
+        <br>
+    <button type="submit" class="border px-3 my-6">Login</button>
+    <button type="reset" class="border ml-3 px-3">Register</button>
+</form>
+</div>

@@ -1,0 +1,17 @@
+<h1 class="text-center , text-4xl , font-extrabold">Registration</h1>
+<div class="text-center , font-bold my-28 , border border-neutral-400 mx-32 text-4xl">
+<form class="py-3" [formGroup]="register" (submit)="handleSubmit()" (reset)="handleAlready()">
+    <label for="name">Name</label><br>
+        <input class="ml-6 py-3 my-2 border border-neutral-500" type="text" id="name" placeholder="Enter your Name" formControlName="name" required>
+        <br>
+    <label for="email">Email</label><br>
+        <input class="ml-6 py-3 mr-1 my-2 border border-neutral-500" type="email" id="email" placeholder="Enter your Email" formControlName="email" required>
+        <br>
+    
+    <label for="password">Password</label><br>
+         <input class="ml-4 py-3 my-2 border border-neutral-500" type="password" id="password"  placeholder="Enter your Password" formControlName="password" required>
+            <br>
+    <button class="py-3 my-2 border border-neutral-500 px-5" type="submit">Save</button>
+    <button class="py-3 my-2 border border-neutral-500 px-5 ml-3" type="reset">Already a User?</button>
+</form>
+</div>
